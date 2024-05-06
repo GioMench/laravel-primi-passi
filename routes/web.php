@@ -14,5 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
     return view('home');
 });
+
+Route::get('/playlist', function () {
+
+    $data = [
+        'message'=> 'more music more happiness',
+        'singers'=> ['Coldplay','Imagine Dragon','Bon Jovi','Eminem','Linkin Park']
+        
+    ] ;
+
+    return view('playlist', $data);
+});
+
