@@ -12,5 +12,7 @@
     </head>
     <body class="antialiased">
         <h1>Hello World!</h1>
+
+        <p>look my <a href="{{route('playlist')}}">playlist</a></p>
     </body>
 </html>

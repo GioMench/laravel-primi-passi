@@ -27,5 +27,5 @@ Route::get('/playlist', function () {
     ] ;
 
     return view('playlist', $data);
-});
+})->name('playlist');
 
